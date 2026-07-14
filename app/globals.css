@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f8fafc; /* slate 50 */
+    --foreground: #0f172a; /* slate 900 */
+    
+    --primary: #4f46e5; /* indigo 600 */
+    --primary-foreground: #ffffff;
+    
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    
+    --border: #e2e8f0; /* slate 200 */
+  }
+
+  .dark {
+    --background: #0b0f19; /* premium deep dark */
+    --foreground: #f8fafc;
+    
+    --primary: #6366f1; /* indigo 500 */
+    --primary-foreground: #ffffff;
+    
+    --card: #111827; /* slate 900 */
+    --card-foreground: #f8fafc;
+    
+    --border: #1f2937; /* slate 800 */
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-200 antialiased font-sans;
+  }
+}
